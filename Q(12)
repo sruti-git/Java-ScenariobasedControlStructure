@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("TEMPERATURE: ");
+        int temp=sc.nextInt();
+        if(temp>=90){
+            System.out.println("wheather is heatwave");
+        }
+        else if(temp>=50){
+            System.out.println("wheather is heat");
+        }
+        else if(temp>=40){
+            System.out.println("wheather is pleasent");
+        }
+        else
+        System.out.println("wheather is cold");
+ }
+}
