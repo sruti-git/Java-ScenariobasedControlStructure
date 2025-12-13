@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Amount: ");
+        int amount = sc.nextInt();
+        int balance = 100000;
+
+        if(amount <= balance){
+            if(amount % 100 == 0){
+                System.out.println("Your ATM withdrawal is valid!");
+            } else {
+                System.out.println("Amount is not a multiple of 100");
+            }
+        } else {
+            System.out.println("ATM withdrawal is invalid");
+        }
+    }
+}
