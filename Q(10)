@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Signal colour: ");
+        String colour=sc.next();
+        if(colour.equals("red")){
+            System.out.println("STOP");
+        }
+        else if(colour.equals("orange")){
+            System.out.println("READY");
+        }
+        else if(colour.equals("green")){
+            System.out.println("GO");
+        }
+        else
+        System.out.println("Invalid colour");
+ }
+}
