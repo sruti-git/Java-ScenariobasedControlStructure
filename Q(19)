@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("data consumed: ");
+        int data=sc.nextInt();
+        if(data<30){
+               System.out.print("Low data");
+        }else if(data<=70){
+           System.out.print("Half consumed");
+        }else
+           System.out.print("data over");
+ 
+    }
+}
