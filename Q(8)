@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int num=5678;
+        System.out.print("Enter your ATM pin: ");
+        int pin=sc.nextInt();
+        if(num==pin){
+            System.out.println("You can withdraw the Money");
+        }
+        else{
+            System.out.println("Incorrect Pin");
+        }
+    }
+}
