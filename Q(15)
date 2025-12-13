@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter mobile number: ");
+        long num=sc.nextLong();
+        if(num>=1000000000l && num<=9999999999l){
+            System.out.println("Valid mobile number");
+        }
+       else {
+            System.out.println("invalid mobile number");
+        }
+     }
+}
