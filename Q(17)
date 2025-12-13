@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Water consumption (litres): ");
+        double litre = sc.nextDouble();
+
+        double bill = 0;
+
+        if(litre <= 1000){
+            bill = 0;
+        }
+        else if(litre <= 2000){
+            bill = (litre - 1000) * 5;
+        }
+        else{
+            bill = (1000 * 5) + (litre - 2000) * 10;
+        }
+
+        if(litre > 2000){
+            double surcharge = bill * 0.10;
+            bill = bill + surcharge;
+        }
+
+        System.out.println("Total water bill: ₹" + bill);
+    }
+}
