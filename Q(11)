@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("PURCHASE Amount:");
+        int purchase=sc.nextInt();
+        if(purchase>4000){
+            System.out.print("40% DISCOUNT IN PURCHASE AMOUNT");
+        }
+        else if(purchase>3000){
+            System.out.println("30% DISCOUNT IN PURCHASE AMOUNT");
+        }    
+        else if(purchase>2000){
+            System.out.println("20% DISCOUNT IN PURCHASE AMOUNT");
+        }
+        else if(purchase>1000){
+            System.out.println("10% DISCOUNT IN PURCHASE AMOUNT");
+        }
+        else{
+            System.out.println("NO DISCOUNT");
+        }
+        }
+        }
